@@ -3,17 +3,21 @@ import logo from "@/public/assets/logo/logo.svg";
 import { FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
 import { MdMail } from "react-icons/md";
 import { exo } from "@/src/app/font";
+import Link from "next/link";
+import { RiMenu3Fill } from "react-icons/ri";
 
 const InfoNav = () => {
   return (
     <div className="Container py-4 bg-[#F5F6F7]">
       <div className="flex items-center justify-between">
+        <Link href="/">
         <div className="flex items-center gap-2">
           <Image src={logo} alt="phone" width={70} height={70} />
           <h2 className={`${exo.className} text-2xl font-bold`}>TitasWeb</h2>
         </div>
+        </Link>
 
-        <div className="flex items-center gap-12">
+        <div className="lg:flex hidden items-center 2xl:gap-12 xl:gap-10 lg:gap-6">
           <div className="flex items-center gap-4">
             <div className="bg-white p-3 text-[#2B748A]">
               <FaPhoneAlt size={18} />
@@ -42,6 +46,10 @@ const InfoNav = () => {
               <span className="text-lg font-bold">Mirpur-1,Dhaka</span>
             </div>
           </div>
+        </div>
+
+        <div className="lg:hidden w-10 h-10 rounded bg-[#2B748A] text-white flex items-center justify-center">
+          <RiMenu3Fill size={20} />
         </div>
       </div>
     </div>

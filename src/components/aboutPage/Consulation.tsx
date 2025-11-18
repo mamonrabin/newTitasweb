@@ -23,14 +23,14 @@ const Consulation = () => {
         <div className="relative flex flex-col items-center justify-center text-center 
           ">
           <p className={`${exo.className} uppercase font-bold text-base text-white`}>Ready to Work Together?</p>
-          <h2 className={`${exo.className} py-4 font-bold text-5xl leading-13 text-white mt-2 lg:w-[60%]`}>
+          <h2 className={`${exo.className} py-4 font-bold lg:text-5xl text-3xl lg:leading-13 text-white mt-2 lg:w-[60%]`}>
             Let&apos;s discuss how Titasweb can accelerate your next project
           </h2>
 
-           <div className="flex items-center gap-4 mt-6">
-            <div className="">
+           <div className="flex lg:flex-row flex-col items-center gap-4 mt-6">
+            <div className="w-full">
               <button
-                className={`${exo.className} cursor-pointer relative overflow-hidden group px-8 py-4 rounded font-semibold bg-[#2B748A] text-white transition-all duration-500`}
+                className={`${exo.className} w-full cursor-pointer relative overflow-hidden group px-8 py-4 rounded font-semibold bg-[#2B748A] text-white transition-all duration-500`}
               >
                 {/* Text layer container */}
                 <span className="relative z-10 block overflow-hidden">
@@ -60,9 +60,9 @@ const Consulation = () => {
               </button>
             </div>
 
-            <div className="">
+            <div className="w-full">
               <button
-                className={`${exo.className} cursor-pointer relative overflow-hidden group px-8 py-4 rounded font-semibold bg-white text-[#2B748A] transition-all duration-500`}
+                className={`${exo.className} w-full cursor-pointer relative overflow-hidden group px-8 py-4 rounded font-semibold bg-white text-[#2B748A] transition-all duration-500`}
               >
                 {/* Text layer container */}
                 <span className="relative z-10 block overflow-hidden">
@@ -95,9 +95,7 @@ const Consulation = () => {
           </div>
         </div>
 
-        {/* <div className="top-0 left-0 absolute">
-            <Image src={image2} alt="titasweb" width={500} height={500} className="w-full h-full object-cover"/>
-        </div> */}
+       
       </div>
     </div>
   );

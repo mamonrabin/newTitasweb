@@ -5,17 +5,17 @@ import Image from "next/image";
 import { exo } from "@/src/app/font";
 const AboutUs = () => {
   return (
-    <div className="mt-16 grid lg:grid-cols-2 gap-8">
+    <div className="lg:mt-16 mt-10 grid lg:grid-cols-2 gap-8">
       <div className="mt-10">
         <p
           className={`${exo.className} text-[#3AC2CF] uppercase font-bold tracking-wider`}
         >
           About TitasWeb
         </p>
-        <h2 className={`${exo.className} py-6 text-4xl font-bold leading-11`}>
+        <h2 className={`${exo.className} py-6 lg:text-4xl text-3xl font-bold leading-11`}>
           Building the Future of Digital Excellence
         </h2>
-        <p className="text-gray-500 mt-2 leading-8">
+        <p className="text-gray-500 lg:mt-2 leading-8">
           The software landscape evolves rapidly, but one thing remains
           constant: businesses need reliable partners who can navigate
           complexity and deliver results. Titasweb exists to be that partner. We
@@ -42,7 +42,7 @@ const AboutUs = () => {
       <div>
         <div className="relative inline-block group  overflow-hidden">
           <Image
-            className="rounded-tl-[150px] rounded-br-[150px]"
+            className="lg:rounded-tl-[150px] rounded-tl-[50px] lg:rounded-br-[150px] rounded-br-[50px]"
             src={aboutImage}
             alt="about"
             width={500}

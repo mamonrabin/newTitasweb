@@ -5,10 +5,10 @@ import React from 'react';
 
 const Services = () => {
     return (
-        <div className='Container h-[540px] bg-[#1D3131] rounded-tl-[160px] rounded-br-[160px] py-25'>
+        <div className='Container lg:h-[540px] bg-[#1D3131] rounded-tl-[160px] lg:rounded-tl-[160px] rounded-br-[100px] py-25'>
             <div className={`${exo.className} flex items-center justify-center text-center flex-col `}>
                 <p className='text-[#3AC2CF] uppercase font-bold text-base'>Service We Provide</p>
-                <h2 className='mt-4 text-4xl font-bold capitalize text-white'>Everything You Need to Dominate Your Market</h2>
+                <h2 className='mt-4 md:text-4xl text-3xl font-bold capitalize text-white'>Everything You Need to Dominate Your Market</h2>
             </div>
 
 

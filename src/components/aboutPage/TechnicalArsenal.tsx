@@ -12,17 +12,17 @@ const TechnicalArsenal = () => {
 
     return (
         <div className="mt-30">
-            <h2 className={`${exo.className} text-4xl font-bold text-center`}>
+            <h2 className={`${exo.className} lg:text-4xl text-3xl font-bold text-center`}>
                 Technical Arsenal That Delivers Results
             </h2>
 
             {/* TAB BUTTONS */}
             <div
-                className={`mt-16 ${exo.className} flex items-center justify-center gap-12`}
+                className={`mt-16 ${exo.className} flex lg:flex-row flex-col items-center justify-center gap-12`}
             >
                 <button
                     onClick={() => setActiveTab("front")}
-                    className={`px-12 py-6 uppercase text-lg font-bold rounded cursor-pointer
+                    className={`px-12 py-6 uppercase text-lg font-bold rounded cursor-pointer w-full
                         ${activeTab === "front" ? "bg-[#2B748A] text-white" : "border border-gray-200"}
                     `}
                 >
@@ -31,7 +31,7 @@ const TechnicalArsenal = () => {
 
                 <button
                     onClick={() => setActiveTab("back")}
-                    className={`px-12 py-6 uppercase text-lg font-bold rounded cursor-pointer
+                    className={`px-12 py-6 uppercase text-lg font-bold rounded cursor-pointer w-full
                         ${activeTab === "back" ? "bg-[#2B748A] text-white" : "border border-gray-200"}
                     `}
                 >
@@ -40,7 +40,7 @@ const TechnicalArsenal = () => {
 
                 <button
                     onClick={() => setActiveTab("morden")}
-                    className={`px-12 py-6 uppercase text-lg font-bold rounded cursor-pointer
+                    className={`px-12 py-6 uppercase text-lg font-bold rounded cursor-pointer w-full
                         ${activeTab === "morden" ? "bg-[#2B748A] text-white" : "border border-gray-200"}
                     `}
                 >

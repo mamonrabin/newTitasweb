@@ -12,9 +12,9 @@ import "swiper/css";
 
 const Technology = () => {
   return (
-    <div className="Container mt-20 pb-20">
+    <div className="Container lg:mt-20 mt-16 pb-20">
       <h2
-        className={`${exo.className} text-center uppercase text-gray-600 text-lg tracking-wider`}
+        className={`${exo.className} text-center uppercase text-gray-600 md:text-lg  tracking-wider`}
       >
         Built With Industry-Leading Technologys
       </h2>

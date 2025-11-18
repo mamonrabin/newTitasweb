@@ -16,11 +16,11 @@ const NavItems = () => {
 
   return (
     <div
-      className={`Container sticky top-0 z-50 transition-shadow duration-300 ${
-        scrolled ? "shadow-md" : ""
+      className={`Container z-50 transition-shadow duration-300 hidden lg:block ${
+        scrolled ? "shadow-md " : ""
       }`}
     >
-      <div className="bg-[#2B748A] rounded-b-md flex items-center justify-between px-6 py-2 text-white">
+      <div className="bg-[#2B748A]  rounded-b-md flex items-center justify-between px-6 py-2 text-white">
         <ul className="flex items-center gap-10 font-semibold cursor-pointer">
           <Link href="/about">
             <li
@@ -62,11 +62,12 @@ const NavItems = () => {
               {[
                 {
                   label: "Full Stack Development",
-                  href: "/services/web-development",
+                  href: "/full-stack-development",
                 },
-                { label: "E-commerce", href: "/services/mobile-apps" },
-                { label: "UI/UX Design", href: "/services/ui-ux" },
-                { label: "Consulting", href: "/services/consulting" },
+                { label: "E-commerce", href: "/e-commerce" },
+                { label: "Graphic Solutions", href: "/ui-ux" },
+                { label: "Custome Softwear", href: "/enterprise" },
+                { label: "See All", href: "/services" },
               ].map((item) => (
                 <li key={item.href} role="none">
                   <a
@@ -101,47 +102,49 @@ const NavItems = () => {
             </li>
           </Link>
           <Link href="/insights">
-          <li
-            className="
+            <li
+              className="
     text-white transition duration-700
     hover:[text-shadow:0_0_8px_white]
   "
-          >
-            Insights
-          </li>
+            >
+              Insights
+            </li>
           </Link>
         </ul>
 
         <div>
-          <button
-            className={`${exo.className} cursor-pointer relative overflow-hidden group px-5 py-2.5 rounded font-semibold bg-white text-[#2B748A] transition-all duration-500`}
-          >
-            {/* Text layer container */}
-            <span className="relative z-10 block overflow-hidden">
-              <span className="block transition-transform duration-500 group-hover:-translate-y-full">
-                Book Appointment
-              </span>
-              <span className="absolute top-full left-0 w-full block text-white transition-transform duration-500 group-hover:-translate-y-full">
-                Book Appointment
-              </span>
-            </span>
-
-            {/* Half-circle sliding background */}
-            <span
-              aria-hidden
-              className="pointer-events-none absolute inset-x-0 bottom-0"
+          <Link href="/appointment">
+            <button
+              className={`${exo.className} cursor-pointer relative overflow-hidden group px-5 py-2.5 rounded font-semibold bg-white text-[#2B748A] transition-all duration-500`}
             >
+              {/* Text layer container */}
+              <span className="relative z-10 block overflow-hidden">
+                <span className="block transition-transform duration-500 group-hover:-translate-y-full">
+                  Book Appointment
+                </span>
+                <span className="absolute top-full left-0 w-full block text-white transition-transform duration-500 group-hover:-translate-y-full">
+                  Book Appointment
+                </span>
+              </span>
+
+              {/* Half-circle sliding background */}
               <span
-                className="
+                aria-hidden
+                className="pointer-events-none absolute inset-x-0 bottom-0"
+              >
+                <span
+                  className="
                   absolute left-1/2 bottom-0
                   -translate-x-1/2 translate-y-full group-hover:translate-y-0
                   transition-transform duration-700 ease-out
                   w-[220%] aspect-square rounded-t-full
                   bg-[#00475C]
                 "
-              />
-            </span>
-          </button>
+                />
+              </span>
+            </button>
+          </Link>
         </div>
       </div>
     </div>

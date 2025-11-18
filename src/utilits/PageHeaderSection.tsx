@@ -17,14 +17,14 @@ const PageHeaderSection: React.FC<PageHeaderSectionProps> = ({ title,pageName })
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}
-      className="py-35 mt-[-60px] rounded-br-[180px]"
+      className="lg:py-35 py-20 lg:mt-[-60px] lg:rounded-br-[180px] rounded-br-[100px]"
     >
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/70 rounded-br-[180px]"></div>
+      <div className="absolute inset-0 bg-black/70 lg:rounded-br-[180px] rounded-br-[100px]"></div>
 
    
-     <div className='Container mt-8 relative flex justify-between'>
-       <h3 className={`${exo.className}  z-10 text-white text-6xl font-bold w-[60%]`}>
+     <div className='Container mt-8 relative flex gap-6 lg:gap-0 lg:flex-row flex-col items-center lg:items-start lg:justify-between justify-center'>
+       <h3 className={`${exo.className}  z-10 text-white lg:text-start text-center md:text-6xl text-4xl font-bold lg:w-[60%]`}>
         {title}
       </h3>
 

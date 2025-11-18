@@ -28,7 +28,7 @@ export const projectList = [
         projectTitle:"EDUCATIONAL PLATFORM TRANSFORMATION",
         name: 'TaskuTark Learning Management System',
          description:"Completely rebuilt Estonia's leading educational platform from legacy PHP to modern Next.js. Created comprehensive LMS with e-book purchasing, interactive learning features, and assessment tools.",
-        link:"",
+        link:"/project-details",
         author:"",
         image: project02,
         fecility:[
@@ -44,7 +44,7 @@ export const projectList = [
         projectTitle:"ENTERPRISE MARKETING PLATFORM",
         name: 'MRS Technologies Global Website',
          description:"Built a sophisticated multi-regional marketing website with Next.js, TypeScript, and enterprise integrations. Features WordPress CMS for content management and HubSpot integration for lead generation.",
-        link:"",
+       link:"/project-details",
         author:"",
         image: project03,
         fecility:[
@@ -60,7 +60,7 @@ export const projectList = [
         projectTitle:"MULTI-LINGUAL MARKETING PLATFORM",
         name: 'MTronic Global Product Marketing Website',
          description:"Developed a sophisticated multi-regional, multi-lingual marketing platform supporting Arabic and English markets. Features beautiful product showcase pages with integrated CMS, marketing automation, and scheduling capabilities.",
-        link:"",
+        link:"/project-details",
         author:"",
         image: project04,
         fecility:[

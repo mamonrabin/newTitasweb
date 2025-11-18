@@ -12,7 +12,7 @@ const HowWoek = () => {
         <p className="text-[#3AC2CF] uppercase font-bold text-base">
           How IT Works
         </p>
-        <h2 className="mt-4 text-4xl font-bold leading-12 capitalize w-[58%]">
+        <h2 className="mt-4 lg:text-4xl text-3xl font-bold lg:leading-12 leading-10 capitalize lg:w-[58%]">
           Proven Leadership in Complex Projects
         </h2>
       </div>

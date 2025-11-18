@@ -14,7 +14,7 @@ const page = () => {
       <PageHeaderSection title="Project Details" pageName="Project Details" />
 
       <div className="Container py-20">
-        <div className="flex  gap-8">
+        <div className="flex lg:flex-row flex-col  gap-8">
           <div className="flex-2">
             <div>
               <Image
@@ -26,7 +26,7 @@ const page = () => {
               />
             </div>
 
-            <h2 className={`${exo.className} mt-8 text-4xl font-bold`}>
+            <h2 className={`${exo.className} mt-8 lg:text-4xl text-3xl font-bold`}>
               Our E-commerce Excellence Achievement
             </h2>
             <p className="mt-4 text-gray-500 leading-6.5">
@@ -37,8 +37,8 @@ const page = () => {
               technical challenges while delivering measurable business results.
             </p>
 
-            <div className="flex items-center gap-8 mt-8">
-              <div className="w-80 h-40 bg-[#2B748A] rounded-l-xl flex items-center justify-center text-white">
+            <div className="flex lg:flex-row flex-col lg:items-center gap-8 mt-8">
+              <div className="w-80 h-40 bg-[#2B748A] lg:rounded-l-xl rounded-t-xl flex items-center justify-center text-white">
                 <FaQuoteRight size={60} />
               </div>
               <div>
@@ -53,7 +53,7 @@ const page = () => {
               </div>
             </div>
 
-            <div className="flex items-center gap-8 mt-10">
+            <div className="flex lg:flex-row flex-col items-center gap-8 mt-10">
               <Image
                 src={bigImage}
                 alt="titasweb"
@@ -71,7 +71,7 @@ const page = () => {
             </div>
 
             <div className="py-10">
-              <h2 className={`${exo.className} text-4xl font-bold`}>
+              <h2 className={`${exo.className} lg:text-4xl text-3xl font-bold`}>
                 The Challenge Of This Project
               </h2>
               <p className="mt-4 text-gray-500 leading-6.5">
@@ -89,7 +89,7 @@ const page = () => {
                 Key Challenge Points:
               </h2>
 
-              <ul className="flex items-center gap-2 mt-4">
+              <ul className="flex flex-wrap items-center gap-2 mt-4">
                 <li className="bg-[#2B748A] px-4 py-2 rounded text-white font-semibold">
                   Performance crises
                 </li>

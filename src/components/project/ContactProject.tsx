@@ -23,7 +23,7 @@ const ContactProject = () => {
         <div className="relative flex flex-col items-center justify-center text-center 
           ">
           <p className={`${exo.className} uppercase font-bold text-base text-white`}>about titasweb</p>
-          <h2 className={`${exo.className} py-4 font-bold text-5xl leading-13 text-white mt-2 lg:w-[60%]`}>
+          <h2 className={`${exo.className} py-4 font-bold lg:text-5xl text-4xl lg:leading-13 leading-12 text-white mt-2 lg:w-[60%]`}>
             Do You Have Similar Service Requirements?
           </h2>
 

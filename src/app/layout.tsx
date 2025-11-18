@@ -3,6 +3,10 @@ import "./globals.css";
 import { inter } from "./font";
 import NavBar from "../components/header/NavBar";
 import Footer from "../components/footer/Footer";
+import BackToTop from "../shared/BackToTop";
+import TopNav from "../components/header/TopNav";
+import InfoNav from "../components/header/InfoNav";
+
 
 export const metadata: Metadata = {
   title: "Titas Web",
@@ -17,9 +21,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className}`}>
+        <TopNav />
+        <InfoNav />
         <NavBar/>
         {children}
         <Footer/>
+        <BackToTop/>
+        
         </body>
     </html>
   );

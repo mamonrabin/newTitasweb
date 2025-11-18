@@ -6,20 +6,21 @@ import { philosophiesList } from "@/src/api/philosophyApi";
 
 const Philosophy = () => {
   return (
-    <div className="mt-20 grid lg:grid-cols-2 gap-40">
+    <div className="mt-20 grid lg:grid-cols-2 xl:gap-40 lg:gap-20 gap-12">
       {/* IMAGE COLUMN */}
       <div>
         <div className="flex item-center">
           <Image
-            className="rounded-2xl"
+            className="rounded-2xl w-full"
             src={img1}
             alt="titaaweb"
             width={500}
             height={500}
+            
           />
 
           <Image
-            className="rounded-2xl relative top-30 right-40"
+            className="rounded-2xl relative top-30 right-40 hidden xl:block"
             src={img2}
             alt="titaaweb"
             width={500}
@@ -30,19 +31,19 @@ const Philosophy = () => {
 
       {/* CONTENT COLUMN */}
       <div>
-        <h2 className={`${exo.className} text-4xl font-bold`}>
+        <h2 className={`${exo.className} lg:text-4xl text-3xl font-bold`}>
           Our Development Philosophy
         </h2>
 
         <div className="flex flex-col gap-6 mt-12">
           {philosophiesList.map((result) => (
             <div key={result.id} className="">
-              <div className="flex items-center justify-center gap-10">
+              <div className="flex lg:items-center justify-center gap-10">
                 <div className="">
                     <p className="w-16 h-16 bg-[#2B748A] rounded text-white inline-flex items-center justify-center">{result.icon}</p>
                 </div>
 
-                <div>
+                <div className="">
                   <h2 className={`${exo.className} text-xl font-bold `}>{result.title}</h2>
                   <p className="text-gray-500 mt-2 leading-7">
                     {result.description}

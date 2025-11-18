@@ -33,7 +33,7 @@ export default function BackToTop() {
 
   return (
     <div
-      className={`progress-wrap bg-[#6F50F3] rounded text-[#fff] fixed bottom-8 right-8 z-50 cursor-pointer transition-all duration-300 ${
+      className={`progress-wrap bg-[#2B748A] rounded text-white fixed bottom-8 right-8 z-50 cursor-pointer transition-all duration-300 ${
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
       }`}
       onClick={scrollToTop}

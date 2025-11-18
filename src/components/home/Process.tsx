@@ -5,14 +5,14 @@ import Image from "next/image";
 
 const Process = () => {
   return (
-    <div className="Container mt-70 pb-30">
+    <div className="Container lg:mt-70 mt-20">
       <div
         className={`${exo.className} flex items-center justify-center text-center flex-col `}
       >
         <p className="text-[#3AC2CF] uppercase font-bold text-base">
           How IT Works
         </p>
-        <h2 className="mt-4 text-4xl font-bold leading-12 capitalize w-[58%]">
+        <h2 className="mt-4 md:text-4xl text-3xl font-bold md:leading-12 leading-10 capitalize lg:w-[58%]">
           We are building great future together, Be with us
         </h2>
       </div>
