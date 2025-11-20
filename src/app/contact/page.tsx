@@ -7,6 +7,7 @@ import { FaPhoneFlip } from "react-icons/fa6";
 import { MdEmail, MdMiscellaneousServices } from "react-icons/md";
 import { LuFolderInput } from "react-icons/lu";
 import ContactChoose from "@/src/components/contactPage/ContactChoose";
+import ContactForm from "@/src/form/ContactForm";
 
 const page = () => {
   return (
@@ -28,70 +29,7 @@ const page = () => {
             </h2>
 
             <div className="lg:px-40 w-full">
-              <form className="mt-8 w-full flex flex-col gap-4">
-                <div className="flex lg:flex-row flex-col items-center gap-4">
-                  <input
-                    className="w-full px-4 py-3 border border-gray-300 rounded outline-none"
-                    type="text"
-                    placeholder="Your Name *"
-                  />
-                  <input
-                    className="w-full px-4 py-3 border border-gray-300 rounded outline-none"
-                    type="email"
-                    placeholder="Email Address *"
-                  />
-                </div>
-
-                <div className="flex lg:flex-row flex-col items-center gap-4">
-                  <input
-                    className="w-full px-4 py-3 border border-gray-300 rounded outline-none"
-                    type="text"
-                    placeholder="Your Number"
-                  />
-                  <select className="w-full px-4 py-3 border border-gray-300 rounded outline-none">
-                    <option value="">Select Service</option>
-                    <option value="">Full Stack Development</option>
-                    <option value="">Ecommerce Website</option>
-                    <option value="">Custome Website</option>
-                    <option value="">Graphices Solution</option>
-                  </select>
-                </div>
-
-                <div className="flex items-center gap-4">
-                  <select className="w-full px-4 py-3 border border-gray-300 rounded outline-none">
-                    <option value="">Project Budjet Range</option>
-                    <option value="">Under TK.10000</option>
-                    <option value="">TK. 10000-20000</option>
-                    <option value="">TK. 20000-30000</option>
-                    <option value="">TK. 30000-40000</option>
-                    <option value="">
-                      Let&apos;s discuss based on requirements
-                    </option>
-                  </select>
-                  <input
-                    className="w-full px-4 py-3 border border-gray-300 rounded outline-none"
-                    type="text"
-                    placeholder="Your Company Name"
-                  />
-                </div>
-
-                <div>
-                  <textarea
-                    className="w-full px-4 py-3 border border-gray-300 rounded outline-none"
-                    placeholder="Tell us about your project goals, timeline, and any specific requirements. The more details you provide, the better we can prepare for our consultation. *"
-                    cols={30}
-                    rows={10}
-                  ></textarea>
-                </div>
-
-                <div>
-                  <input
-                    className={`${exo.className} px-8 py-4 rounded bg-[#2B748A] hover:bg-[#3AC2CF] duration-300 text-white font-medium cursor-pointer`}
-                    type="submit"
-                    value="Get Free Consultation →"
-                  />
-                </div>
-              </form>
+              <ContactForm/>
             </div>
           </div>
         </div>

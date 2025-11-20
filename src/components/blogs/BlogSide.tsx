@@ -1,4 +1,5 @@
 import { exo } from "@/src/app/font";
+import Link from "next/link";
 import React from "react";
 import { IoArrowForwardSharp } from "react-icons/io5";
 
@@ -85,6 +86,7 @@ const BlogSide = () => {
         </p>
 
         <div className="mt-8">
+          <Link href="/appointment">
           <button
             className={`${exo.className} w-full text-center cursor-pointer relative overflow-hidden group px-8 py-4 rounded font-semibold bg-white text-[#2B748A] transition-all duration-500`}
           >
@@ -114,6 +116,7 @@ const BlogSide = () => {
               />
             </span>
           </button>
+          </Link>
         </div>
       </div>
     </div>

@@ -38,22 +38,11 @@ export const serviceList = [
     id: 4,
     title: "Custome Softwear",
     image: service4,
+    link: "/full-stack-development",
     description:
       "Assertively enable operational excellence through purpose-built software solutions. Our custom development expertise maintains competitive advantages while delivering revolutionary efficiency improvements through future-proof business applications.",
     icon: <GrCloudSoftware size={40} />,
   },
-  {
-    id: 5,
-    title: "Branding & Marketing",
-    description:
-      "Separating your work from your home life can improve work-life balance and coworking spaces provide a dedicated place to work",
-    icon: "https://i.ibb.co.com/27nfjG21/icon-5.png",
-  },
-  {
-    id: 6,
-    title: "Graphic Design",
-    description:
-      "Separating your work from your home life can improve work-life balance and coworking spaces provide a dedicated place to work",
-    icon: "https://i.ibb.co.com/XkW7vJyj/icon-6.png",
-  },
+  
+ 
 ];

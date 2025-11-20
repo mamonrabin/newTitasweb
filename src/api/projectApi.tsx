@@ -10,7 +10,7 @@ export const projectList = [
     {
         id: 1,
         projectTitle:"BUILDING E-COMMERCE EXCELLENCE",
-        name: 'Rahva Raamat Performance Transformation',
+        name: 'E-commerce Performance Transformation',
         description:"Transformed Estonia's #1 bookstore into a high-performance e-commerce machine. Achieved 98/100 Lighthouse score and sub-1.2s load times through Next.js optimization.",
         link:"/project-details",
         author:"",

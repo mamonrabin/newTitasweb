@@ -42,7 +42,7 @@ const About = () => {
           </p>
 
           <div className="lg:mt-12 mt-10">
-            <Link href="/contact">
+            <Link href="/contact">  
             <button
               className={`${exo.className} cursor-pointer relative overflow-hidden group px-8 py-4 rounded font-semibold bg-[#2B748A] text-white transition-all duration-500`}
             >

@@ -1,21 +1,44 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 import { exo } from "../app/font";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 
 const AppointmentForm = () => {
-  const [selectedDate, setSelectedDate] = useState(30);   // ⬅️ selected day
-  const [selectedTime, setSelectedTime] = useState(null); // ⬅️ selected time
+  const [selectedDate, setSelectedDate] = useState(30); // ⬅️ selected day
+  const [selectedTime, setSelectedTime] = useState<string | null>(null); // ⬅️ selected time
 
   // Enabled days (same as your UI)
-  const enabledDates = [18,19,20,21,22,23,24,25,26,27,28,29,30];
+  const enabledDates = [18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30];
 
   const timeSlots = [
-    "12:00 AM","12:30 AM","11:00 AM","11:30 AM","12:00 PM","12:30 PM",
-    "1:00 PM","1:30 PM","2:00 PM","2:30 PM","3:00 PM","3:30 PM",
-    "4:00 PM","4:30 PM","5:00 PM","5:30 PM","6:00 PM","6:30 PM",
-    "7:00 PM","7:30 PM","8:00 PM","8:30 PM","9:00 PM","9:30 PM",
-    "10:00 PM","10:30 PM","11:00 PM","11:30 PM"
+    "12:00 AM",
+    "12:30 AM",
+    "11:00 AM",
+    "11:30 AM",
+    "12:00 PM",
+    "12:30 PM",
+    "1:00 PM",
+    "1:30 PM",
+    "2:00 PM",
+    "2:30 PM",
+    "3:00 PM",
+    "3:30 PM",
+    "4:00 PM",
+    "4:30 PM",
+    "5:00 PM",
+    "5:30 PM",
+    "6:00 PM",
+    "6:30 PM",
+    "7:00 PM",
+    "7:30 PM",
+    "8:00 PM",
+    "8:30 PM",
+    "9:00 PM",
+    "9:30 PM",
+    "10:00 PM",
+    "10:30 PM",
+    "11:00 PM",
+    "11:30 PM",
   ];
 
   return (
@@ -24,12 +47,22 @@ const AppointmentForm = () => {
         Make An Appointment
       </h2>
 
-      <form className="mt-8 flex flex-col gap-4">
+      <p className="mt-2 text-red-600 font-medium">
+        Please for make an appointment contact us by our email or what&apos;s
+        app
+      </p>
 
+      <form className="mt-8 flex flex-col gap-4">
         {/* --- USER INPUTS --- */}
         <div className="flex lg:flex-row flex-col items-center gap-4 w-full">
-          <input className="px-4 py-3 rounded border border-gray-300 w-full" placeholder="Your Name"/>
-          <input className="px-4 py-3 rounded border border-gray-300 w-full" placeholder="Email Address"/>
+          <input
+            className="px-4 py-3 rounded border border-gray-300 w-full"
+            placeholder="Your Name"
+          />
+          <input
+            className="px-4 py-3 rounded border border-gray-300 w-full"
+            placeholder="Email Address"
+          />
         </div>
 
         <select className="w-full px-4 py-3 border border-gray-300 rounded">
@@ -44,10 +77,8 @@ const AppointmentForm = () => {
 
         {/* --- MAIN WRAPPER --- */}
         <div className="w-full mt-3 rounded-lg border border-gray-300 flex flex-col lg:flex-row overflow-hidden">
-
           {/* --- LEFT SIDE CALENDAR --- */}
           <div className="lg:w-5/12 border-r border-gray-300 flex flex-col min-h-[500px]">
-
             {/* Month Header */}
             <div className="p-3 bg-gray-100 border-b border-gray-300 flex items-center justify-between">
               <h6 className="font-semibold text-gray-800">November 2025</h6>
@@ -64,25 +95,37 @@ const AppointmentForm = () => {
 
             {/* Days */}
             <div className="p-3">
-
               {/* Weekdays */}
               <div className="grid grid-cols-7 mb-3 text-center text-xs text-gray-500">
-                <div>S</div><div>M</div><div>T</div><div>W</div><div>T</div><div>F</div><div>S</div>
+                <div>S</div>
+                <div>M</div>
+                <div>T</div>
+                <div>W</div>
+                <div>T</div>
+                <div>F</div>
+                <div>S</div>
               </div>
 
               {/* Calendar Grid */}
               <div className="grid grid-cols-7 gap-1 text-center">
-
                 {/* First disabled days */}
-                {["26","27","28","29","30","31","1"].map(d => (
-                  <button key={d} disabled className="h-9 text-sm text-gray-400 opacity-50">
+                {["26", "27", "28", "29", "30", "31", "1"].map((d) => (
+                  <button
+                    key={d}
+                    disabled
+                    className="h-9 text-sm text-gray-400 opacity-50"
+                  >
                     {d}
                   </button>
                 ))}
 
                 {/* Disabled 2–17 */}
-                {Array.from({ length: 17 }, (_, i) => i + 2).map(d => (
-                  <button key={d} disabled className="h-9 text-sm text-gray-400 opacity-50">
+                {Array.from({ length: 17 }, (_, i) => i + 2).map((d) => (
+                  <button
+                    key={d}
+                    disabled
+                    className="h-9 text-sm text-gray-400 opacity-50"
+                  >
                     {d}
                   </button>
                 ))}
@@ -94,7 +137,7 @@ const AppointmentForm = () => {
                     onClick={() => setSelectedDate(day)}
                     className={`h-9 text-sm rounded transition ${
                       selectedDate === day
-                        ? "bg-[#15414e] text-white"   // selected day
+                        ? "bg-[#15414e] text-white" // selected day
                         : "bg-[#2B748A] text-white hover:bg-[#1d4d5c]"
                     }`}
                   >
@@ -103,8 +146,12 @@ const AppointmentForm = () => {
                 ))}
 
                 {/* Last disabled days */}
-                {["1","2","3","4","5","6"].map(d => (
-                  <button key={d} disabled className="h-9 text-sm text-gray-400 opacity-50">
+                {["1", "2", "3", "4", "5", "6"].map((d) => (
+                  <button
+                    key={d}
+                    disabled
+                    className="h-9 text-sm text-gray-400 opacity-50"
+                  >
                     {d}
                   </button>
                 ))}
@@ -145,11 +192,12 @@ const AppointmentForm = () => {
 
         {/* Submit */}
         <div>
-          <input
-            className={`${exo.className} bg-[#2B748A] text-white px-4 py-3 rounded cursor-pointer hover:bg-[#13495a] duration-300`}
-            type="submit"
-            value="Book Appointment"
-          />
+          <button
+            disabled
+            className={`${exo.className} bg-[#2B748A] text-white px-4 py-3 rounded cursor-not-allowed opacity-50`}
+          >
+            Book Appointment
+          </button>
         </div>
       </form>
     </div>

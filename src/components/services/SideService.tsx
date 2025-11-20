@@ -49,35 +49,37 @@ const SideService = () => {
         </p>
 
         <div className="mt-8">
-          <button
-            className={`${exo.className} w-full text-center cursor-pointer relative overflow-hidden group px-8 py-4 rounded font-semibold bg-white text-[#2B748A] transition-all duration-500`}
-          >
-            {/* Text layer container */}
-            <span className="relative z-10 block overflow-hidden">
-              <span className="flex  items-center justify-center gap-2 capitalize transition-transform duration-500 group-hover:-translate-y-full">
-                Make Appointment <IoArrowForwardSharp />
-              </span>
-              <span className="absolute flex  items-center justify-center gap-2 capitalize top-full left-0 w-full text-white transition-transform duration-500 group-hover:-translate-y-full">
-                Make Appointment <IoArrowForwardSharp />
-              </span>
-            </span>
-
-            {/* Half-circle sliding background */}
-            <span
-              aria-hidden
-              className="pointer-events-none absolute inset-x-0 bottom-0"
+          <Link href="/appointment">
+            <button
+              className={`${exo.className} w-full text-center cursor-pointer relative overflow-hidden group px-8 py-4 rounded font-semibold bg-white text-[#2B748A] transition-all duration-500`}
             >
+              {/* Text layer container */}
+              <span className="relative z-10 block overflow-hidden">
+                <span className="flex  items-center justify-center gap-2 capitalize transition-transform duration-500 group-hover:-translate-y-full">
+                  Make Appointment <IoArrowForwardSharp />
+                </span>
+                <span className="absolute flex  items-center justify-center gap-2 capitalize top-full left-0 w-full text-white transition-transform duration-500 group-hover:-translate-y-full">
+                  Make Appointment <IoArrowForwardSharp />
+                </span>
+              </span>
+
+              {/* Half-circle sliding background */}
               <span
-                className="
+                aria-hidden
+                className="pointer-events-none absolute inset-x-0 bottom-0"
+              >
+                <span
+                  className="
                                          absolute left-1/2 bottom-0
                                          -translate-x-1/2 translate-y-full group-hover:translate-y-0
                                          transition-transform duration-700 ease-out
                                          w-[220%] aspect-square rounded-t-full
                                          bg-[#0b3744] text-white
                                        "
-              />
-            </span>
-          </button>
+                />
+              </span>
+            </button>
+          </Link>
         </div>
       </div>
     </div>

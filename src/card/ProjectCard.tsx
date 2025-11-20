@@ -2,8 +2,11 @@ import { Check } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-
-const ProjectCard = ({ project }) => {
+import { TProject } from "../types";
+interface projectProps {
+  project:TProject
+}
+const ProjectCard:React.FC<projectProps> = ({ project }) => {
   return (
     <div className="relative group">
       <Link href={project.link}>

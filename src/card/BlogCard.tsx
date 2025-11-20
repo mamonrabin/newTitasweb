@@ -3,8 +3,13 @@ import React from "react";
 import { exo } from "../app/font";
 import { GoArrowRight } from "react-icons/go";
 import Link from "next/link";
+import { TBlog } from "../types";
 
-const BlogCard = ({ blog }) => {
+interface blogProps {
+  blog:TBlog
+}
+
+const BlogCard:React.FC<blogProps> = ({ blog }) => {
   return (
     <div className="group cursor-pointer">
       <div className="w-full h-[260px] overflow-hidden">

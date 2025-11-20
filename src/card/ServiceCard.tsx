@@ -3,8 +3,11 @@ import React from "react";
 import { exo } from "../app/font";
 import { IoArrowForwardSharp } from "react-icons/io5";
 import Link from "next/link";
-
-const ServiceCard = ({ service }) => {
+import { TService } from "../types";
+interface serviceProps {
+  service:TService
+}
+const ServiceCard:React.FC<serviceProps> = ({ service }) => {
   return (
     <div className="bg-white border border-gray-200 rounded relative overflow-hidden group cursor-pointer">
       <div className="py-12 px-8 h-[490px]">

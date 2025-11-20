@@ -4,7 +4,7 @@ import { FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
 import { MdMail } from "react-icons/md";
 import { exo } from "@/src/app/font";
 import Link from "next/link";
-import { RiMenu3Fill } from "react-icons/ri";
+import ResponsiveBar from "./ResponsiveBar";
 
 const InfoNav = () => {
   return (
@@ -49,7 +49,7 @@ const InfoNav = () => {
         </div>
 
         <div className="lg:hidden w-10 h-10 rounded bg-[#2B748A] text-white flex items-center justify-center">
-          <RiMenu3Fill size={20} />
+          <ResponsiveBar/>
         </div>
       </div>
     </div>

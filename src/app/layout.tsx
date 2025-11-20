@@ -7,10 +7,10 @@ import BackToTop from "../shared/BackToTop";
 import TopNav from "../components/header/TopNav";
 import InfoNav from "../components/header/InfoNav";
 
-
 export const metadata: Metadata = {
   title: "Titas Web",
-  description: "Personal Portfolio of Titas Mondal",
+  description:
+    "Full-stack development experts specializing in Next.js, React, AI automation & e-commerce. Trusted by industry leaders worldwide. Get free consultation.",
 };
 
 export default function RootLayout({
@@ -23,12 +23,11 @@ export default function RootLayout({
       <body className={`${inter.className}`}>
         <TopNav />
         <InfoNav />
-        <NavBar/>
+        <NavBar />
         {children}
-        <Footer/>
-        <BackToTop/>
-        
-        </body>
+        <Footer />
+        <BackToTop />
+      </body>
     </html>
   );
 }
