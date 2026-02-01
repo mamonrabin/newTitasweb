@@ -81,7 +81,12 @@ const AppointmentForm = () => {
           <div className="lg:w-5/12 border-r border-gray-300 flex flex-col min-h-[500px]">
             {/* Month Header */}
             <div className="p-3 bg-gray-100 border-b border-gray-300 flex items-center justify-between">
-              <h6 className="font-semibold text-gray-800">November 2025</h6>
+              <h6 className="font-semibold text-gray-800">
+                {new Date().toLocaleString("en-US", {
+                  month: "long",
+                  year: "numeric",
+                })}
+              </h6>
 
               <div className="flex gap-2">
                 <button className="w-12 h-7 flex items-center justify-center rounded bg-[#2B748A] text-white">
@@ -167,7 +172,11 @@ const AppointmentForm = () => {
           <div className="lg:w-7/12 p-5 flex flex-col min-h-[500px]">
             <div className="mb-4">
               <h5 className="font-semibold text-gray-800">
-                {`Saturday, November ${selectedDate}`}
+                {new Date().toLocaleDateString("en-US", {
+                  weekday: "long",
+                  month: "long",
+                  day: "numeric",
+                })}
               </h5>
               <p className="text-gray-500 text-sm">28 time slots available</p>
             </div>

@@ -34,14 +34,14 @@ const Footer = () => {
             <div className="mt-8 flex items-center gap-2 cursor-pointer">
               <a
                 className="bg-white text-[#2B748A] p-2 rounded hover:bg-[#2B748A] hover:text-white duration-300"
-                href="https://www.facebook.com/al.mamon.9237"
+                href="https://www.facebook.com/profile.php?id=61584650367467"
                 target="_blank"
               >
                 <FaFacebookF />
               </a>
               <a
                 className="bg-white text-[#2B748A] p-2 rounded hover:bg-[#2B748A] hover:text-white duration-300"
-                href="https://www.linkedin.com/in/almamon/"
+                href="https://www.linkedin.com/company/titasweb/"
                 target="_blank"
               >
                 <FaLinkedinIn />

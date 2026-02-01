@@ -12,7 +12,7 @@ const TopNav = () => {
         <div className="flex items-center justify-center gap-4">
           {/* Facebook */}
           <a
-            href="https://www.facebook.com/al.mamon.9237"
+            href="https://www.facebook.com/profile.php?id=61584650367467"
             target="_blank"
             className="group relative flex h-9 w-9 items-center justify-center rounded-full border border-white/20 bg-transparent text-white transition-all duration-500 hover:scale-110 hover:border-[#1877F2] hover:bg-[#1877F2]/10"
           >
@@ -30,7 +30,7 @@ const TopNav = () => {
 
           {/* LinkedIn */}
           <a
-            href="https://www.linkedin.com/in/almamon/"
+            href="https://www.linkedin.com/company/titasweb/"
             target="_blank"
             className="group relative flex h-9 w-9 items-center justify-center rounded-full border border-white/20 bg-transparent text-white transition-all duration-500 hover:scale-110 hover:border-[#0077B5] hover:bg-[#0077B5]/10"
           >

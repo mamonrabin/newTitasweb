@@ -2,6 +2,7 @@ import React from "react";
 import image2 from "@/public/assets/image/cta-bg-shape1-1.png";
 import { IoArrowForwardSharp } from "react-icons/io5";
 import { exo } from "@/src/app/font";
+import Link from "next/link";
 // import Image from "next/image";
 
 const ContactProject = () => {
@@ -29,6 +30,8 @@ const ContactProject = () => {
 
            <div className="flex items-center gap-4 mt-6">
         
+           <Link href="/contact">
+           
             <div className="">
               <button
                 className={`${exo.className} cursor-pointer relative overflow-hidden group px-8 py-4 rounded font-semibold bg-white text-[#2B748A] transition-all duration-500`}
@@ -61,6 +64,7 @@ const ContactProject = () => {
                 </span>
               </button>
             </div>
+           </Link>
           </div>
         </div>
 
