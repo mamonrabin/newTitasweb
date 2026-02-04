@@ -10,7 +10,7 @@ export const blogList = [
     description:
       "Slow e-commerce sites lose 53% of mobile visitors. React Server Components eliminate the root cause &#8211; bloated JavaScript bundles &#8211; delivering instant product pages and higher conversions.",
     author: "Al Mamon",
-    date: "17 Octobar 2025",
+    date: "17 Octobar 2026",
     image: blogImg01,
     category: "Business",
     link:"/why-your-e-commerce",
@@ -21,7 +21,7 @@ export const blogList = [
     description:
       "Every second users wait, you are losing revenue. Next.js 15s new caching approach gives you surgical precision to boost performance and cut server costs with three game-changing strategies.",
     author: "Al Mamon",
-    date: "17 Octobar 2025",
+    date: "17 Octobar 2026",
     image: blogImg02,
     category: "SEO",
     link:"/next-js-15",
@@ -33,7 +33,7 @@ export const blogList = [
     description:
       "How do you take a massive e-commerce platform from a 4-second load time to under 1.5 seconds? We share the performance tuning strategies and architectural decisions that led to a peak 98/100 Lighthouse score.",
     author: "Al Mamon",
-    date: "17 Octobar 2025",
+    date: "17 Octobar 2026",
     image: blogImg03,
     category: "Marketing",
     link:"/behind-the-scenes",

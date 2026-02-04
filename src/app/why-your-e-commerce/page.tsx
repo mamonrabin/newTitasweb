@@ -18,7 +18,7 @@ const page = () => {
           />
           <div className="flex items-center justify-between bg-[#1D3131] px-4 py-3 text-white">
             <p className={`${exo.className} font-semibold`}>Al Mamon</p>
-            <p className="text-sm">17 Octobar 2025</p>
+            <p className="text-sm">17 Octobar 2026</p>
           </div>
 
           <div className="px-6 py-4">

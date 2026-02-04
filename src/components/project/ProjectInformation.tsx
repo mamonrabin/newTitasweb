@@ -31,7 +31,7 @@ const ProjectInformation = () => {
                         <p className='w-12 h-12 rounded-full text-[#2B748A] flex items-center justify-center border border-gray-200'><BsCalendarDate /></p>
                         <div>
                             <p className='text-gray-500'>Date:</p>
-                            <h2 className='font-bold text-lg'>Completed 2025</h2>
+                            <h2 className='font-bold text-lg'>Completed 2026</h2>
                         </div>
                     </div>
 
